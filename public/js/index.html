@@ -4,33 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>We-cook - Authentic Turkish Bakery</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html">
+                <img src="../images/logo.png" alt="We-cook Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <h1>Welcome to [Your Bakery Name]</h1>
-            <p>Authentic Turkish Flavors & Freshly Baked Goods</p>
-            <a href="shop.html" class="btn">Shop Now</a>
+            <h1>Welcome to We-cook</h1>
+            <p>Where Tradition Meets Taste</p>
+            <a href="shop.html" class="btn">Explore Our Shop</a>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured">
+            <h2>Our Bestsellers</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="../images/baklava.jpg" alt="Baklava">
+                    <h3>Baklava</h3>
+                    <p>Delicate layers of phyllo and pistachio goodness.</p>
+                </div>
+                <div class="product">
+                    <img src="../images/simit.jpg" alt="Simit">
+                    <h3>Simit</h3>
+                    <p>Traditional Turkish sesame bread rings.</p>
+                </div>
+                <div class="product">
+                    <img src="../images/kazandibi.jpg" alt="Kazandibi">
+                    <h3>Kazandibi</h3>
+                    <p>Delicious caramelized milk pudding.</p>
+                </div>
+                <div class="product">
+                    <img src="../images/sambali.jpg" alt="Sambali">
+                    <h3>Sambali</h3>
+                    <p>
+                        Dense and moist semolina cake sweetened with syrup, often garnished with almonds or peanuts.</p>
+                </div>
+                <div class="product">
+                    <img src="../images/lor.jpg" alt="lor">
+                    <h3>lor</h3>
+                    <p>
+                        Lor cheese is traditionally made from whey, the liquid byproduct of cheese production.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About We-cook</h2>
+            <p>At We-cook, we bring you the finest Turkish bakery delights, handcrafted with love and tradition. From
+                baklava to freshly baked bread, every bite is a journey to Turkey’s rich culinary heritage.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 [Your Bakery Name]. All rights reserved.</p>
+        <p>&copy; 2025 We-cook. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
     </footer>
 </body>
 
