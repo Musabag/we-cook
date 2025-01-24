@@ -300,3 +300,26 @@ footer a {
     max-width: 100%;
     /* Prevent it from exceeding container width */
 }
+
+img {
+    max-width: 100%;
+    /* Prevents images from exceeding their container */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.menu-item img,
+.shop-item img {
+    width: 100%;
+    /* Scales images to fit their container */
+    max-width: 300px;
+    /* Sets a maximum size */
+    border-radius: 10px;
+    /* Optional: Adds rounded corners */
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
