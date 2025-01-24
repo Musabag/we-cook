@@ -8,7 +8,6 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
 }
 
 /* Header */
@@ -22,11 +21,8 @@ header {
 
 header .logo {
     width: 150px;
-    /* Set fixed width */
     height: auto;
-    /* Maintain aspect ratio */
     display: block;
-    /* Ensure it behaves properly in layout */
 }
 
 header ul {
@@ -45,67 +41,6 @@ header a {
 .hero {
     text-align: center;
     padding: 2rem;
-    background-color: #fceabb;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero .btn {
-    background-color: #f8b400;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-footer a {
-    text-decoration: none;
-    color: #f8b400;
-    font-weight: bold;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header .logo {
-        width: 100px;
-        /* Smaller size for mobile */
-    }
-
-    header ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
-.hero {
-    text-align: center;
-    padding: 4rem 1rem;
     background-color: #fceabb;
     color: #333;
 }
@@ -134,9 +69,10 @@ footer a {
     background-color: #d99400;
 }
 
+/* Featured Section */
 .featured {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem;
 }
 
 .featured h2 {
@@ -149,12 +85,6 @@ footer a {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    /* Makes it mobile-friendly */
-}
-
-.product {
-    max-width: 300px;
-    text-align: center;
 }
 
 .product img {
@@ -163,35 +93,7 @@ footer a {
     margin-bottom: 1rem;
 }
 
-.product h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.product p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.about {
-    background-color: #fff9e5;
-    text-align: center;
-    padding: 2rem 1rem;
-    color: #333;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
+/* Menu Section */
 .menu {
     text-align: center;
     padding: 2rem 1rem;
@@ -200,17 +102,18 @@ footer a {
 .menu h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: #f8b400;
 }
 
 .menu-items {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .menu-item {
-    max-width: 250px;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -220,16 +123,17 @@ footer a {
     margin-bottom: 1rem;
 }
 
-.menu-item h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+.menu-item h3 {
+    margin: 0.5rem 0;
+    color: #333;
 }
 
 .menu-item p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #666;
 }
 
+/* Shop Section */
 .shop {
     text-align: center;
     padding: 2rem 1rem;
@@ -245,11 +149,6 @@ footer a {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-}
-
-.shop-item {
-    max-width: 250px;
-    text-align: center;
 }
 
 .shop-item img {
@@ -282,6 +181,7 @@ footer a {
     background-color: #d99400;
 }
 
+/* Contact Section */
 .contact {
     text-align: center;
     padding: 2rem 1rem;
@@ -290,11 +190,6 @@ footer a {
 .contact h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
 }
 
 .contact-form {
@@ -329,99 +224,79 @@ footer a {
     background-color: #d99400;
 }
 
-.about-us {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
-
-.about-us h1,
-.about-us h2 {
-    color: #f8b400;
+/* About Section */
+.about {
+    background-color: #fff9e5;
     text-align: center;
+    padding: 2rem 1rem;
+    color: #333;
 }
 
-.about-us ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
-
-.about-us p,
-.about-us li {
+.about h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
 footer {
-    background: #f8b400;
+    background-color: #f8b400;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-.about-us {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
-
-.about-us h1,
-.about-us h2 {
-    color: #f8b400;
-    text-align: center;
-}
-
-.about-us ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
-
-.about-us p,
-.about-us li {
-    margin-bottom: 1rem;
-}
-
-footer {
-    background: #f8b400;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.menu {
-    padding: 2rem;
-    text-align: center;
-}
-
-.menu h1,
-.menu h2 {
-    color: #f8b400;
-}
-
-.menu-items {
+footer ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.menu-item {
-    max-width: 300px;
-    text-align: center;
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.menu-item img {
-    width: 100%;
-    border-radius: 10px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        width: 100px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .products,
+    .menu-items,
+    .shop-items {
+        flex-direction: column;
+    }
 }
 
-.menu-item h3 {
-    margin: 0.5rem 0;
-    color: #333;
-}
-
-.menu-item p {
-    font-size: 0.9rem;
-    color: #666;
+.logo {
+    width: 150px;
+    /* Set the desired width */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Ensure the image behaves properly */
+    margin: 0 auto;
+    /* Center it horizontally if needed */
+    max-width: 100%;
+    /* Prevent it from exceeding container width */
 }
